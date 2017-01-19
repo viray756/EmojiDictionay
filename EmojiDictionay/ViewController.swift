@@ -3,7 +3,7 @@
 //  EmojiDictionay
 //
 //  Created by Jose Viray on 1/18/17.
-//  Copyright © 2017 Jose Viray. All rights reserved.
+//  Copyright © 2017 Jose Viray. All rights reserved...
 //
 
 import UIKit
