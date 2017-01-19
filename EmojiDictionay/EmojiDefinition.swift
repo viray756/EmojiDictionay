@@ -10,7 +10,7 @@ import UIKit
 
 class EmojiDefinition: UIViewController {
     
-    var emoji = "NO EMOJI"
+    var emoji = ""
     var emojis = ["😀","😍","🙏","👿","👻","👀","🐼","🙊"]
 
     @IBOutlet weak var defLabel: UILabel!
