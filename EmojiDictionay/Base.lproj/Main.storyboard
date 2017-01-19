@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bEA-Dj-trr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EmojiDictionay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="EmojiDictionay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bsb-Tc-SRQ">
-                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -35,17 +35,20 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bsb-Tc-SRQ" secondAttribute="bottom" id="eQC-j4-fbt"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="81c-F9-i5F"/>
                     <connections>
                         <outlet property="emojiTable" destination="bsb-Tc-SRQ" id="0iM-un-x6q"/>
+                        <segue destination="cV4-vp-VcB" kind="show" identifier="moveSegue" id="o2x-r2-b2n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="996" y="37.331334332833585"/>
         </scene>
-        <!--View Controller-->
+        <!--Emoji Definition-->
         <scene sceneID="pyS-r4-xzI">
             <objects>
-                <viewController id="cV4-vp-VcB" sceneMemberID="viewController">
+                <viewController id="cV4-vp-VcB" customClass="EmojiDefinition" customModule="EmojiDictionay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0s6-K8-vsq"/>
                         <viewControllerLayoutGuide type="bottom" id="fHq-TP-tyn"/>
@@ -55,13 +58,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z08-pQ-x35">
-                                <rect key="frame" x="79" y="60" width="218" height="239"/>
+                                <rect key="frame" x="79" y="104" width="218" height="239"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a Church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p12-ey-7rt">
-                                <rect key="frame" x="126" y="339" width="123" height="21"/>
+                                <rect key="frame" x="126" y="383" width="123" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -75,10 +78,32 @@
                             <constraint firstItem="Z08-pQ-x35" firstAttribute="top" secondItem="p12-ey-7rt" secondAttribute="bottom" constant="-300" id="Yvb-T0-KVt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="defLabel" destination="p12-ey-7rt" id="YtY-ZE-50b"/>
+                        <outlet property="emojiLabel" destination="Z08-pQ-x35" id="hgv-f8-hf1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Gc-As-qbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943" y="139"/>
+            <point key="canvasLocation" x="1854" y="37"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fnb-OE-ObU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bEA-Dj-trr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6dX-s9-rfM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="E69-lH-9sV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hob-gF-Aa2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="37"/>
         </scene>
     </scenes>
 </document>

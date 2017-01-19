@@ -12,6 +12,7 @@
 		17625B321E305CF900CEBCA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17625B301E305CF900CEBCA4 /* Main.storyboard */; };
 		17625B341E305CF900CEBCA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17625B331E305CF900CEBCA4 /* Assets.xcassets */; };
 		17625B371E305CF900CEBCA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17625B351E305CF900CEBCA4 /* LaunchScreen.storyboard */; };
+		17625B3F1E306DF100CEBCA4 /* EmojiDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17625B3E1E306DF100CEBCA4 /* EmojiDefinition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		17625B331E305CF900CEBCA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17625B361E305CF900CEBCA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17625B381E305CF900CEBCA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17625B3E1E306DF100CEBCA4 /* EmojiDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiDefinition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				17625B2C1E305CF800CEBCA4 /* AppDelegate.swift */,
 				17625B2E1E305CF800CEBCA4 /* ViewController.swift */,
+				17625B3E1E306DF100CEBCA4 /* EmojiDefinition.swift */,
 				17625B301E305CF900CEBCA4 /* Main.storyboard */,
 				17625B331E305CF900CEBCA4 /* Assets.xcassets */,
 				17625B351E305CF900CEBCA4 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17625B3F1E306DF100CEBCA4 /* EmojiDefinition.swift in Sources */,
 				17625B2F1E305CF800CEBCA4 /* ViewController.swift in Sources */,
 				17625B2D1E305CF800CEBCA4 /* AppDelegate.swift in Sources */,
 			);
