@@ -10,9 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    @IBOutlet weak var emojiTable: UITableView!
+    @IBOutlet weak var emojiTable: UITableView! //Property
     
-    var emojis = ["😀","😍","🙏","👿","👻","👀","🐼","🙊"]
+    var emojis = ["😀","😍","🙏","👿","👻","👀","🐼","🙊"]  //Property
     
     override func viewDidLoad() {
         super.viewDidLoad()
