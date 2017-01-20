@@ -30,6 +30,9 @@ class EmojiDefinition: UIViewController {
         if emoji == emojis[0] {
             defLabel.text = "Smiley Face"
         }
+        if emoji == emojis[2] {
+            defLabel.text = "Prayer Hands"
+        }
         
     }
 
