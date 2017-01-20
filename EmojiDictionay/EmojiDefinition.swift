@@ -10,9 +10,11 @@ import UIKit
 
 class EmojiDefinition: UIViewController {
     
-    var emoji = ""
-    var emojis = ["😀","😍","🙏","👿","👻","👀","🐼","🙊"]
+    var emoji = Emoji()
+    
 
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var birthYearLabel: UILabel!
     @IBOutlet weak var defLabel: UILabel!
     @IBOutlet weak var emojiLabel: UILabel!
     
@@ -22,17 +24,12 @@ class EmojiDefinition: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        emojiLabel.text = emoji
+        emojiLabel.text = emoji.stringEmoji
+        birthYearLabel.text = "\(emoji.birthYear)"
+        categoryLabel.text = emoji.category
+        defLabel.text = emoji.definition
         
-        if emoji == emojis[1] {
-        defLabel.text = "Heart Face"
-        }
-        if emoji == emojis[0] {
-            defLabel.text = "Smiley Face"
-        }
-        if emoji == emojis[2] {
-            defLabel.text = "Prayer Hands"
-        }
+
         
     }
 

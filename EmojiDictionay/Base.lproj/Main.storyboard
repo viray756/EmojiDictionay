@@ -69,16 +69,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catergory Building" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAM-he-GX6">
+                                <rect key="frame" x="117.5" y="438" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gS-0A-Ica">
+                                <rect key="frame" x="169" y="488" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Z08-pQ-x35" firstAttribute="top" secondItem="0s6-K8-vsq" secondAttribute="bottom" constant="40" id="BVk-gH-qoV"/>
                             <constraint firstItem="p12-ey-7rt" firstAttribute="centerX" secondItem="ifb-op-GYE" secondAttribute="centerX" id="N5V-R6-5pH"/>
+                            <constraint firstItem="yAM-he-GX6" firstAttribute="centerX" secondItem="ifb-op-GYE" secondAttribute="centerX" id="OFc-9a-fYn"/>
                             <constraint firstItem="Z08-pQ-x35" firstAttribute="centerX" secondItem="ifb-op-GYE" secondAttribute="centerX" id="R9W-Yn-RX6"/>
+                            <constraint firstItem="6gS-0A-Ica" firstAttribute="top" secondItem="yAM-he-GX6" secondAttribute="bottom" constant="29" id="Sh3-L8-OuS"/>
                             <constraint firstItem="Z08-pQ-x35" firstAttribute="top" secondItem="p12-ey-7rt" secondAttribute="bottom" constant="-300" id="Yvb-T0-KVt"/>
+                            <constraint firstItem="yAM-he-GX6" firstAttribute="top" secondItem="p12-ey-7rt" secondAttribute="bottom" constant="34" id="anR-gC-lf3"/>
+                            <constraint firstItem="6gS-0A-Ica" firstAttribute="centerX" secondItem="ifb-op-GYE" secondAttribute="centerX" constant="1" id="bfc-f5-upU"/>
+                            <constraint firstItem="yAM-he-GX6" firstAttribute="centerX" secondItem="ifb-op-GYE" secondAttribute="centerX" constant="1" id="hXY-gf-Ch9"/>
+                            <constraint firstItem="6gS-0A-Ica" firstAttribute="centerX" secondItem="ifb-op-GYE" secondAttribute="centerX" id="kzR-Xp-urQ"/>
+                            <constraint firstItem="yAM-he-GX6" firstAttribute="centerX" secondItem="ifb-op-GYE" secondAttribute="centerX" constant="1" id="pOn-9R-zw2"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="6gS-0A-Ica" id="wVj-mc-dqo"/>
+                        <outlet property="categoryLabel" destination="yAM-he-GX6" id="QVd-cA-Bhy"/>
                         <outlet property="defLabel" destination="p12-ey-7rt" id="YtY-ZE-50b"/>
                         <outlet property="emojiLabel" destination="Z08-pQ-x35" id="hgv-f8-hf1"/>
                     </connections>
